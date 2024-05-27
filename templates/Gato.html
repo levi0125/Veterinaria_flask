@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="keywords" content="HTML5, CSS3">
+<title>Ejemplo de estructura HTML5</title>
+<link rel="stylesheet" href="./static/CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1 class="centrar-texto">
+            GATOS
+        </h1>
+    </header>
+    <section class="main" >
+        {% extends "navbar.html" %}
+        {% block content %}
+        <section class="articles">
+            <article>
+                <p>
+                    Los gatos, conocidos científicamente como Felis catus, son mamíferos carnívoros domesticados que han sido compañeros de los humanos durante milenios. Aquí tienes información básica sobre los gatos junto con algunas fuentes donde puedes encontrar más detalles:
+                </p>
+                
+                <h3 class="centrar-texto" >Tamaño y apariencia</h3>
+                <div class="flex">
+                    <p class="w50">
+                        Los gatos tienen una esperanza de vida que varía según la raza y el entorno, pero en general pueden vivir entre 12 y 20 años.
+                        Requieren cuidados regulares, incluyendo alimentación adecuada, atención veterinaria, ejercicio y enriquecimiento ambiental.
+                    </p>
+                    <img src="./static/imgs/cat/caract.jpg" alt="" class="w40">
+                </div>
+                
+                <h3 class="centrar-texto">Comunicacion y socializacion</h3>
+                <div class="flex">
+                    <p class="w50">
+                        Los gatos se comunican a través de maullidos, ronroneos, movimientos corporales y expresiones faciales.
+                        Son animales territoriales que pueden establecer fuertes vínculos con sus dueños y con otros animales en el hogar.
+                    </p>
+                    <img src="./static/imgs/cat/social.jpg" alt="" class="w40">
+                </div>
+                
+                <p>
+                    <h3 class="centrar-texto">Conservación y Proteccion</h3> 
+                    Aunque los gatos domésticos no están en peligro de extinción, algunos gatos callejeros enfrentan desafíos como la falta de refugio, el hambre y la enfermedad.
+                    Se promueven programas de esterilización y adopción para controlar la población de gatos callejeros y mejorar su bienestar.
+                </p>
+                
+            </article>
+        </section>  
+    </section> 
+    <aside class="maxW">
+        <p> 
+            <h3 class="centrar-texto">Descripcion y Comportamiento</h3>
+            Los gatos son animales pequeños y ágiles, con cuerpos flexibles y oídos puntiagudos.
+            Son conocidos por ser independientes, curiosos y cariñosos, aunque su personalidad puede variar según la raza y el temperamento individual.
+            Los gatos son excelentes cazadores y tienen habilidades naturales para acechar, perseguir y atrapar presas.
+        </p>
+        <div>
+            <img src="./static/imgs/cat/asecho.jpg" alt="" class="w50 align-right">
+            <br><br>
+        </div>
+        
+        <h3 class="centrar-texto clear"> Origen y Evolucion:</h3>
+        <p >
+            Los ancestros de los gatos domésticos se remontan a gatos salvajes que se asociaron con los humanos hace más de 9,000 años.
+            A lo largo de la historia, los gatos han sido valorados por su capacidad para controlar plagas y su compañía en los hogares. 
+        </p>
+        <div >
+            <img src="./static/imgs/cat/evol.jpg" alt="" class="w50">
+        </div>
+    </aside>
+    
+    {% endblock %}
+    <!-- <footer>
+        <section class="centrar-texto">
+            <p>Direccion:Colonia Adolfo Landero, Calle 06 de Febrero #223</p>
+            <p>Numero de telefono: 4491291626</p>
+            <p>Correo Electronico:capibarasForever@gmail.com</p>
+            <div>
+                <p>Fuentes(ChatGPT):</p>
+                <a href="https://catvets.com/">
+                    <p>The American Association of Feline Practitioners (AAFP)</p>
+                </a>
+                <a href="https://tica.org/">
+                    <p>The International Cat Association (TICA)</p>
+                </a>
+                <a href="https://www.nationalgeographic.com/animals/mammals/facts/domestic-cat/">
+                    <p>National Geographic - Cats</p>
+                </a>
+                <a href="https://www.britannica.com/animal/cat">
+                    <p>Enciclopedia Británica - Cat</p>
+                </a>
+            </div>
+        </section>
+    </footer> -->
+    
+</body>
+</html>

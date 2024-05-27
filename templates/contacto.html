@@ -1,0 +1,41 @@
+<head>
+      <link rel="stylesheet" href="./static/CSS/estilos.css">
+      <title>Contactanos</title>
+</head>
+
+<body>
+      <header>
+            <h1 class="centrar-texto"><b >CONTACTANOS!</b></h1>
+      </header>
+      
+      <center>
+            <section class="main">
+                  {% extends "navbar.html" %}
+      
+                  {% block content %}
+
+                  <section id="form">
+                        <form action="/Contacto" method="post">
+                              <div class="container">
+                                     <div class="form-row">
+                                          <div class="col-xs-12 ">
+                                           <div class="mb-3">
+                                                 <label for="correo" class="form-label">Escribe aqui tu correo electronico</label>
+                                                 <input type="email" class="form-control" name="correo" id="correo" placeholder="nombre@ejemplo.com">
+                                           </div>
+                                           <div class="mb-3">
+                                                <br>
+                                                <label for="comentarios" class="form-label">Escribe tu mensaje</label>
+                                                <br>
+                                                <textarea maxlength="250" rows="4" type="text" class="form-control" name="comentarios" id="comentarios"></textarea>
+                                           </div>
+                                           </div>
+                                     </div>
+                               </div>
+                                     <button type="submit" class="btn btn-primary">Enviar</button>
+                           </form>
+                  </section>
+            </section>
+            {% endblock %}      
+      </center>
+</body>

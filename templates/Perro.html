@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="keywords" content="HTML5, CSS3">
+<title>Ejemplo de estructura HTML5</title>
+<link rel="stylesheet" href="./static/CSS/estilos.css">
+<!-- <link rel="stylesheet" href="estilos.css"> -->
+<!-- <link rel="stylesheet" href="estilos.css"> -->
+</head>
+<body>
+    <header>
+        <h1 class="centrar-texto"> 
+            PERROS
+        </h1> 
+    </header>
+    
+    <!-- <div> -->
+    <section class="main" >
+        {% extends "navbar.html" %}
+        {% block content %}
+        <section class="articles">
+            <article>
+                <p> 
+                    Los perros, también conocidos científicamente como Canis lupus familiaris, son una especie de mamíferos domesticados que han estado asociados con los humanos durante miles de años. 
+                </p>
+                
+                <!-- <img src="imgs/capibara/capi3.jpg" alt="" width="200px"> -->
+                <h3 class="centrar-texto" >Fisiologia y salud</h3>
+                <div class="flex">
+                    <p class="w50">
+                        Los perros tienen una esperanza de vida que varía según la raza, el tamaño y otros factores. En general, pueden vivir entre 10 y 15 años, aunque algunos perros más pequeños pueden vivir más tiempo.
+                        Requieren cuidados regulares, incluyendo alimentación adecuada, ejercicio, atención veterinaria y afecto.
+                    </p>
+                    <img src="./static/imgs/perro/ejercita.jpg" alt="" class="w40">
+                </div>
+                
+                <h3 class="centrar-texto">Comunicación y Socialización</h3>
+                <div class="flex">
+                    <img src="./static/imgs/perro/princesa.jpg" alt="" class="w40">
+                    <p class="w50 padd-left">
+                        Los perros se comunican a través de ladridos, gruñidos, movimientos corporales y expresiones faciales.
+                        Son animales sociales que disfrutan de la compañía humana y de otros perros, y la socialización temprana es importante para su desarrollo emocional y comportamental.
+                    </p>
+                </div>
+                
+                <p>
+                    <h3 class="centrar-texto">Conservación y Protección</h3> 
+                    A pesar de ser una de las especies domésticas más comunes, los perros también enfrentan desafíos, como el abandono, el maltrato y la sobre-población en algunos lugares.
+                    Se promueven campañas de adopción responsable, esterilización y cuidado adecuado para garantizar el bienestar de los perros en todo el mundo.
+                </p>
+            </article> 
+            </section>  
+        </section> 
+        <aside class="maxW">
+            <p> 
+                <h3 class="centrar-texto">Comportamiento</h3>
+                Los perros son una de las especies más diversas en términos de tamaño, forma y comportamiento, debido a la gran cantidad de razas criadas selectivamente por los humanos.
+                Son conocidos por ser leales, afectuosos y obedientes, lo que los convierte en compañeros populares y mascotas en todo el mundo.
+                Tienen una amplia gama de habilidades, desde perros de trabajo y de servicio hasta perros de compañía y de exhibición.
+            </p>
+            <div >
+                <img src="./static/imgs/perro/loyal.jpg" alt="" class="w50">
+            </div>
+            <p> 
+                <h3 class="centrar-texto">Origen y evlucion</h3>
+                Se cree que los perros descienden de lobos domesticados que se asociaron con los humanos hace más de 15,000 años.
+                A lo largo de la historia, los humanos han criado selectivamente perros para diferentes propósitos, como pastoreo, caza, compañía y trabajo.
+            </p>
+            <div>
+                <img src="./static/imgs/perro/trabajo.jpg" alt="" class="w50 align-right">
+                <br><br>
+            </div>
+            
+            
+        </aside>
+        <!-- </div> -->
+        
+        {% endblock %}
+        <!-- <footer>
+            <section class="centrar-texto">
+                <p>Direccion:Colonia Adolfo Landero, Calle 06 de Febrero #223</p>
+                <p>Numero de telefono: 4491291626</p>
+                <p>Correo Electronico:capibarasForever@gmail.com</p>
+                
+                <div>
+                    <p if="Fuentes">Fuentes(ChatGPT):</p>
+                    <a href="https://www.akc.org/">
+                        <p>American Kennel Club (AKC)</p>
+                    </a>
+                    <a href="https://www.humanesociety.org/">
+                        <p>The Humane Society of the United States</p>
+                    </a>
+                    <a href="https://www.nationalgeographic.com/animals/mammals/d/domestic-dog/">
+                        <p>National Geographic - Dogs</p>
+                    </a>
+                    <a href="https://www.britannica.com/animal/dog">
+                        <p>Enciclopedia Británica - Dog</p>
+                    </a>
+                </div>
+                
+            </section>
+        </footer> -->
+        
+    </body>
+    </html>

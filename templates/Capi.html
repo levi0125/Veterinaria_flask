@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta name="keywords" content="HTML5, CSS3">
+<title>Ejemplo de estructura HTML5</title>
+<link rel="stylesheet" href="./static/CSS/estilos.css">
+</head>
+<body>
+    <header>
+        <h1 class="centrar-texto">
+            CAPIBARAS
+        </h1>
+    </header>
+    <section class="main" >
+        {% extends "navbar.html" %}
+        {% block content %}
+        <section class="articles">
+            <article>
+                <p>
+                    <h3 class="centrar-texto">¿Que es?</h3>
+                    El capibara (Hydrochoerus hydrochaeris) es el roedor más grande del mundo y es nativo de América del Sur. Aquí hay información sobre los capibaras:
+                </p>
+                
+                <h3 class="centrar-texto" >Tamaño y apariencia</h3>
+                <div class="flex">
+                    <p class="w50">
+                        Los capibaras son animales grandes y robustos, con cuerpos redondeados y piernas cortas. Pueden alcanzar hasta 1.2 metros de longitud y pesar hasta 65 kilogramos. Tienen una cabeza pequeña, orejas redondeadas y ojos y narices ubicados en la parte superior de la cabeza para permitir la respiración mientras nadan. Su pelaje es áspero y de color marrón rojizo.
+                    </p>
+                    <img src="./static/imgs/capibara/capi2.png" alt="" class="w40">
+                </div>
+                
+                <h3 class="centrar-texto">Hábitat</h3>
+                <div class="flex">
+                    <p class="w50">
+                        Los capibaras son animales semiacuáticos y se encuentran principalmente en hábitats acuáticos, como pantanos, ríos, lagos y estanques en las selvas y pastizales de América del Sur. Son especialmente comunes en las regiones de la cuenca del Amazonas y el Pantanal.
+                    </p>
+                    <img src="./static/imgs/capibara/capi3.jpg" alt="" class="w40">
+                </div>
+                
+                <p>
+                    <h3 class="centrar-texto">Estado de conservación</h3> 
+                    Aunque los capibaras no están considerados en peligro de extinción en la mayoría de sus hábitats, enfrentan amenazas como la caza furtiva y la pérdida de hábitat debido a la deforestación y la expansión humana. En algunas áreas, están protegidos por leyes locales y nacionales.
+                </p>
+                
+                Los capibaras son criaturas fascinantes y desempeñan un papel importante en los ecosistemas acuáticos de América del Sur. Son una parte integral de la biodiversidad de la región y son apreciados por su comportamiento único y su aspecto distintivo.
+            </article>
+        </section>  
+    </section> 
+    <aside class="maxW">
+        <p> 
+            <h3 class="centrar-texto">Comportamiento</h3>
+            Son animales sociales y viven en grupos familiares grandes de hasta 20 individuos. Son activos durante el día y pasan mucho tiempo en el agua para mantenerse frescos y evitar a los depredadores. Son excelentes nadadores y pueden permanecer sumergidos por largos períodos de tiempo.
+        </p>
+        <p> 
+            <h3 class="centrar-texto">Dieta</h3>
+            Los capibaras son herbívoros y se alimentan principalmente de hierbas, plantas acuáticas y frutas. Pasan una gran parte del día alimentándose y necesitan consumir grandes cantidades de alimento para satisfacer sus necesidades energéticas.
+        </p>
+        <div>
+            <img src="./static/imgs/capibara/comid.jpg" alt="" class="w50 align-right">
+            <br><br>
+        </div>
+        
+        <h3 class="centrar-texto clear"> Reproduccion:</h3>
+        <p > 
+            La gestación de una hembra capibara dura alrededor de 5 meses, después de los cuales puede dar a luz a una camada de 2 a 8 crías. Las crías son precoces y pueden caminar y nadar poco después del nacimiento. Permanecen con la madre y el grupo familiar durante varios meses antes de independizarse.
+        </p>
+        <div >
+            <img src="./static/imgs/capibara/capi1.jpg" alt="" class="w50">
+        </div>
+    </aside>
+        
+    {% endblock %}
+    <!-- <footer>
+        <section class="centrar-texto">
+            <p>Direccion:Colonia Adolfo Landero, Calle 06 de Febrero #223</p>
+            <p>Numero de telefono: 4491291626</p>
+            <p>Correo Electronico:capibarasForever@gmail.com</p>
+            <p>Fuentes(ChatGPT):
+                <br>
+                Emmons, L. H., & Feer, F. (1997). Neotropical rainforest mammals: a field guide. University of Chicago Press.
+                Herrera, E. A., & Macdonald, D. W. (1989). Resource utilization and territoriality in group-living capybaras (Hydrochoerus hydrochaeris). Journal of Zoology, 218(4), 689-706.
+                Jansen, P. A., & Vervaecke, H. (2000). Capybara (Hydrochoerus hydrochaeris) biology and population management at the Parque Nacional da Serra da Capivara, Brazil. South American Mammals: Their Diversity, Distribution, and Conservation, 313-319.
+            </p>
+        </section>
+    </footer> -->
+    
+</body>
+</html>

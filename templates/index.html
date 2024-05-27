@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta name="keywords" content="HTML5, CSS3">
+        <title>Ejemplo de estructura HTML5</title>
+        <link rel="stylesheet" href="./static/CSS/estilos.css">
+    </head>
+    <body>
+        <header>
+            <h1 class="centrar-texto">
+                CLINICA VETERINARIA CAPIBARAS FOREVER
+            </h1>
+        </header>
+        
+        <section class="main" >
+            
+            {% extends "navbar.html" %}
+            
+            {% block content %}
+            <section class="articles ">
+                <article class="font_larger">
+                    <p > 
+                        <h3>¿Que hacemos?</h3>
+                        En esta veterinaria  nos esforzamos por contribuir al bienestar de la comunidad. Ofrecemos charlas educativas, 
+                        eventos de adopción y colaboramos con organizaciones de rescate animal.
+                    </p>
+                    <div class="centrar" >
+                        <img src="./static/imgs/inicio/rescue.jpg" width="300px" >
+                        
+                    </div>
+                    
+                    <div >
+                        <h3>Nuestros Servicios:</h3>
+                        <ul>
+                            <li>
+                                Consultas médicas para mascotas.
+                            </li>
+                            <li>
+                                Vacunación y desparasitación.
+                            </li>
+                            <li>
+                                Cirugías y tratamientos.
+                            </li>
+                            <li>
+                                Cuidado dental y esterilización.
+                            </li>
+                            <li>
+                                Cuidados de Emergencia
+                            </li>
+                            <li>
+                                Nutricion y Control de peso
+                            </li>
+                            <li>
+                                Cuidado de Comportamiento
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    
+                    <section class="centrar">
+                        <img src="./static/imgs/inicio/salud.jpg" width="200px" >
+                        
+                    </section>
+                    
+                    <p class="centrar centrar_derecha">
+                        
+                    </p>
+                    
+                    <h3> Horario de atencion:</h3>
+                    <section  class="sangria2">
+                        <p > 
+                            <p id="horarios">Lunes a Sabados: </p>
+                            <p class="sangria">8:00hrs a 18:00hrs</p>
+                            <p id="horarios">Domigos: </p>
+                            <p class="sangria">12:00hrs a 18:00hrs</p>
+                        </p>
+                    </section>
+                    
+                    <div>
+                        Estamos aquí para ayudarte. ¡Contáctanos y cuidaremos de tus mascotas como si fueran nuestras!
+                        <br><br>
+                        <!-- <h3 class="limpiar_efectos">
+                            ¡Esperamos verte pronto y cuidar juntos de la salud y felicidad de tus adorables compañeros!
+                        </h3> -->
+                        <p id="despedida">
+                            <u>
+                                ¡Esperamos verte pronto y cuidar juntos de la salud y felicidad de tus adorables compañeros!
+                            </u>
+                        </p>
+                    </div>
+                    
+                </article>
+            </section>  
+        </section> 
+
+        <aside class="maxW">
+            <h3>Equipo</h3>
+            <section id="lista2" class="sangria">
+                <p>Equipo de diagnóstico por imágenes:</p>
+                
+                <ul>
+                    <li>
+                        Radiografía (rayos X).
+                    </li>
+                    <li>
+                        Ecografía.
+                    </li>
+                    <li>
+                        Tomografía computarizada (TC).
+                    </li>
+                    <li>
+                        Resonancia magnética (RM).
+                    </li>
+                </ul>
+                
+                <p>Equipo de laboratorio:</p>
+                <ul>
+                    <li>
+                        Analizadores de sangre y hematología.
+                    </li>
+                    <li>
+                        Analizadores bioquímicos y de química clínica.
+                    </li>
+                    <li>
+                        Microscopios para examen de muestras de tejido y líquidos biológicos.
+                    </li>
+                    <li>
+                        Equipos de cultivo bacteriano para pruebas microbiológicas.
+                    </li>
+                </ul>
+                
+                <p>Equipos de anestesia y monitoreo:</p>
+                <ul>
+                    <li>
+                        Máquinas de anestesia.
+                    </li>
+                    <li>
+                        Monitores de signos vitales (frecuencia cardíaca, oxigenación, presión arterial, etc.).
+                    </li>
+                    <li>
+                        Bombas de infusión para administrar fluidos y medicamentos durante la anestesia.
+                    </li>
+                </ul>
+                
+                <p>Instrumental quirúrgico:</p>
+                <ul>
+                    <li>
+                        Pinzas, tijeras, retractores y otros instrumentos de cirugía.
+                    </li>
+                    <li>
+                        Mesas de operaciones y lámparas quirúrgicas.
+                    </li>
+                    <li>
+                        Equipos de esterilización y autoclaves para la esterilización de instrumentos.
+                    </li>
+                </ul>
+                
+                <p>Equipos dentales:</p>
+                <ul>
+                    <li>
+                        Unidades dentales con equipos de limpieza y pulido.
+                    </li>
+                    <li>
+                        Equipos de radiografía dental.
+                    </li>
+                </ul>
+                
+                <p>Equipo de tratamiento y terapia:</p>        
+                <ul>
+                    <li>
+                        Equipos de electrocirugía y electrocardiografía.
+                    </li>
+                    <li>
+                        Láseres terapéuticos.
+                    </li>
+                    <li>
+                        Equipos de terapia física y rehabilitación.
+                    </li>
+                </ul>
+                
+                <p>Equipos de imagenología:</p>
+                <ul>
+                    <li>
+                        Endoscopios para examinar el tracto gastrointestinal, las vías respiratorias y otras áreas del cuerpo.
+                    </li>
+                    <li>
+                        Equipos de ecocardiografía para el examen del corazón.
+                        
+                    </li>
+                </ul>
+                
+                
+                <p>Equipos de diagnóstico rápido (IDEXX, Abaxis, etc.):</p>
+                <ul>
+                    <li>
+                        Equipos portátiles para pruebas de laboratorio rápidas en consultorios o clínicas.                
+                    </li>
+                </ul>
+            </section>
+            
+        </aside>
+        {% endblock %}
+
+    </body>
+</html>
